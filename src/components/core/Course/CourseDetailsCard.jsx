@@ -20,7 +20,6 @@ function CourseDetailsCard({ course, setConfirmationModal, handleBuyCourse }) {
   const {
     thumbnail: ThumbnailImage,
     price: CurrentPrice,
-    _id,
   } = course
 
   const handleShare = () => {
@@ -47,7 +46,6 @@ function CourseDetailsCard({ course, setConfirmationModal, handleBuyCourse }) {
     })
   }
 
-  let flag=false;
   const cartCheck=(arr)=>{
     let x = 0;
     while(x<arr.length){

@@ -3,7 +3,6 @@ import { useDispatch, useSelector } from "react-redux"
 import { useParams } from "react-router-dom"
 
 import {
-  fetchCourseDetails,
   getFullDetailsOfCourse,
 } from "../../../../services/operations/courseDetailsAPI"
 import { setCourse, setEditCourse } from "../../../../slices/courseSlice"
@@ -26,7 +25,7 @@ export default function EditCourse() {
       }
       setLoading(false)
     })()
-  }, [])
+  }, [courseId, token, dispatch])
 
   if (loading) {
     return (

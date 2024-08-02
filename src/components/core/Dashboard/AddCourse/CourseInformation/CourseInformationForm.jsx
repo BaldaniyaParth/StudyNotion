@@ -53,7 +53,7 @@ export default function CourseInformationForm() {
       setValue("courseImage", course.thumbnail)
     }
     getCategories()
-  }, [])
+  }, [course.category, course.courseDescription, course.courseName, course.instructions, course.price, course.tag, course.thumbnail, course.whatYouWillLearn,  editCourse, setValue])
 
   const isFormUpdated = () => {
     const currentValues = getValues()

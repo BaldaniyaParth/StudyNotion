@@ -1,7 +1,7 @@
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "\"This is StudyMotion website\"",
+  "description": "\"This is StudyNotion website\"",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

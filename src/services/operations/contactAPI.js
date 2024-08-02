@@ -8,7 +8,7 @@ const { CONTACT_US_API } = contactusEndpoint
 export const contactUs = async (data) => {
     const toastId = toast.loading("Loading...")
     try {
-      const response = await apiConnector("POST", CONTACT_US_API, data)
+      await apiConnector("POST", CONTACT_US_API, data)
 
       toast.success("Send Meassge Successful")
 
