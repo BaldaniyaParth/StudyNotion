@@ -24,7 +24,8 @@ export default function EnrolledCourses() {
     };
 
     getEnrolledCourses();
-  }, [token])
+    // eslint-disable-next-line
+  }, [])
 
   return (
     <>

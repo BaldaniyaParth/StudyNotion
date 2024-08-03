@@ -18,7 +18,8 @@ function VerifyEmail() {
     if (!signupData) {
       navigate("/signup");
     }
-  }, [navigate, signupData]);
+    // eslint-disable-next-line
+  }, []);
 
   const handleVerifyAndSignup = (e) => {
     e.preventDefault();

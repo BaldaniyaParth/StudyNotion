@@ -21,7 +21,8 @@ export default function PublishCourse() {
     if (course?.status === COURSE_STATUS.PUBLISHED) {
       setValue("public", true)
     }
-  }, [course?.status, setValue])
+    // eslint-disable-next-line
+  }, [])
 
   const goBack = () => {
     dispatch(setStep(2))

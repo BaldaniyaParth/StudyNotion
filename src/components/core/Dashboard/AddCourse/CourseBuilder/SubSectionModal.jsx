@@ -38,7 +38,8 @@ export default function SubSectionModal({
       setValue("lectureDesc", modalData.description)
       setValue("lectureVideo", modalData.videoUrl)
     }
-  }, [view, edit, setValue, modalData.title, modalData.description, modalData.videoUrl])
+    // eslint-disable-next-line
+  }, [])
 
   // detect whether form is updated or not
   const isFormUpdated = () => {

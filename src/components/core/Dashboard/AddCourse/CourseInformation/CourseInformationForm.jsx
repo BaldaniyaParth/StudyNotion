@@ -36,6 +36,7 @@ export default function CourseInformationForm() {
     const getCategories = async () => {
       setLoading(true)
       const categories = await fetchCourseCategories()
+      console.log("categories", categories);
       if (categories.length > 0) {
         setCourseCategories(categories)
       }
@@ -53,7 +54,8 @@ export default function CourseInformationForm() {
       setValue("courseImage", course.thumbnail)
     }
     getCategories()
-  }, [course.category, course.courseDescription, course.courseName, course.instructions, course.price, course.tag, course.thumbnail, course.whatYouWillLearn,  editCourse, setValue])
+    // eslint-disable-next-line
+}, [])
 
   const isFormUpdated = () => {
     const currentValues = getValues()

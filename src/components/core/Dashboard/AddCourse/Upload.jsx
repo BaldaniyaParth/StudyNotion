@@ -47,11 +47,13 @@ export default function Upload({
 
   useEffect(() => {
     register(name, { required: true })
-  }, [register, name])
+    // eslint-disable-next-line
+  }, [register])
 
   useEffect(() => {
     setValue(name, selectedFile)
-  }, [selectedFile, setValue, name])
+    // eslint-disable-next-line
+  }, [selectedFile, setValue])
 
   return (
     <div className="flex flex-col space-y-2">

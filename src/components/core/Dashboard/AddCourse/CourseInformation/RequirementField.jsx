@@ -18,11 +18,13 @@ export default function RequirementsField({
       setRequirementsList(course?.instructions)
     }
     register(name, { required: true, validate: (value) => value.length > 0 })
-  }, [course?.instructions, editCourse, name, register])
+    // eslint-disable-next-line
+  }, [])
 
   useEffect(() => {
     setValue(name, requirementsList)
-  }, [requirementsList, name, setValue])
+    // eslint-disable-next-line
+  }, [requirementsList])
 
   const handleAddRequirement = () => {
     if (requirement) {

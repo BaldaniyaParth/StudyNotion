@@ -25,7 +25,8 @@ export default function EditCourse() {
       }
       setLoading(false)
     })()
-  }, [courseId, token, dispatch])
+    // eslint-disable-next-line
+  }, [])
 
   if (loading) {
     return (

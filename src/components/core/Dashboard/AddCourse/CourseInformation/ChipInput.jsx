@@ -24,11 +24,13 @@ export default function ChipInput({
       setChips(course?.tag)
     }
     register(name, { required: true, validate: (value) => value.length > 0 })
-  }, [course?.tag, editCourse, name, register ])
+    // eslint-disable-next-line
+  }, [])
 
   useEffect(() => {
     setValue(name, chips)
-  }, [chips, name, setValue])
+    // eslint-disable-next-line
+  }, [chips])
 
   // Function to handle user input when chips are added
   const handleKeyDown = (event) => {
