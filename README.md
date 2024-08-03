@@ -1,5 +1,5 @@
 # StudyNotion 
-StudyNotion is an innovative EdTech platform that enables users to create, consume, and rate educational content. Built with the MERN stack, StudyNotion offers features like user authentication, course management, payment integration, and more. Instructors can upload courses and track progress through visually appealing pie charts, while students can interact with course materials and track their learning progress. Check out the live site here :- [```live```]()
+StudyNotion is an innovative EdTech platform that enables users to create, consume, and rate educational content. Built with the MERN stack, StudyNotion offers features like user authentication, course management, payment integration, and more. Instructors can upload courses and track progress through visually appealing pie charts, while students can interact with course materials and track their learning progress. Check out the live site here :- [```live```](https://study-notion-parth.vercel.app/)
 
 
 ### StudyNotion aims to provide:
@@ -9,7 +9,7 @@ StudyNotion is an innovative EdTech platform that enables users to create, consu
 
 ## Technologies Used
 - Frontend: ReactJS, TailwindCSS
-- Backend: Express, NodeJS, MongoDB
+- Backend: Express, NodeJS, MongoDB, JWT
 - Payment Processing: Razorpay
 - Frontend Hosting: Vercel
 - Backend Hosting: Render
